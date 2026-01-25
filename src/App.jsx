@@ -18,7 +18,7 @@ function AppContent() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 py-10">
+      <main className="max-w-6xl mx-auto px-4 py-10">
         <header className="mb-8 text-center">
           <h1
             className={`text-3xl md:text-4xl font-extrabold tracking-tight

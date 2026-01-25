@@ -63,7 +63,7 @@ function BasicProps() {
           onClick={() => setClickCount(clickCount + 1)}
         />
       </div>
-      <div className="flex flex-wrap gap-4 p-6 rounded-2xl bg-gray-900 border border-gray-800">
+      <div className="flex items-center flex-wrap gap-4 p-6 rounded-2xl bg-gray-900 border border-gray-800">
         <span>
           <Button
             text="Small"
