@@ -37,6 +37,23 @@ function BasicProps() {
 
   return (
     <div className="space-y-6">
+      <header className="space-y-2">
+        <h2 className="text-2xl md:text-3xl font-bold text-white">
+          Basic Props
+        </h2>
+
+        <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl">
+          Props (short for{" "}
+          <span className="text-violet-400 font-medium">properties</span>) are
+          how React components receive data from their parent components. In
+          this example, the <code className="text-violet-400">Button</code>{" "}
+          component receives different props like <code>text</code>,{" "}
+          <code>color</code>,<code>size</code>, <code>onClick</code>, and{" "}
+          <code>disabled</code> to control its appearance and behavior without
+          changing its internal logic.
+        </p>
+      </header>
+
       {/* Buttons Card */}
       <div className="flex flex-wrap gap-4 p-6 rounded-2xl bg-gray-900 border border-gray-800">
         <Button
