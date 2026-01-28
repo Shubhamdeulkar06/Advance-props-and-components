@@ -3,10 +3,10 @@ import ChildrenProps from "./components/ChildrenProps";
 import ComplexProps from "./components/ComplexProps";
 import Navbar from "./components/Navbar";
 import RefProps from "./components/RefProps";
-import ThemeToggler from "./components/ThemeToggler";
+import ThemeToggler, { ThemeProvider,useTheme } from "./components/ThemeToggler.jsx";
 
 function AppContent() {
-  const isDark = true;
+  const {isDark} = useTheme();
   const cardClass = isDark
     ? "bg-gray-900 border border-gray-800"
     : "bg-white border border-gray-200";
@@ -133,7 +133,11 @@ function AppContent() {
 }
 
 function App() {
-  return <AppContent />;
+  return (
+    <ThemeProvider>
+      <AppContent />;
+    </ThemeProvider>
+  );
 }
 
 export default App;
